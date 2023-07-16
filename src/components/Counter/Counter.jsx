@@ -1,4 +1,5 @@
 import React from "react";
+import Controls from "./Controls";
 // import 'Counter.css';
 
 
@@ -23,11 +24,10 @@ class Counter extends React.Component {
         return (
             <div className="counter">
                 <span className="counter_value">{this.state.value}</span>
-
-            <div className="counter_controls">
-                <button type="button" onClick={this.hendleIncrement}> Збільшити на 1</button>
-                <button type="button" onClick={this.hendleDecrement}> Зменшити на 1</button>
-            </div>
+            <Controls 
+            onIncrement={this.hendleIncrement}
+            onDecrement={this.hendleDecrement}
+            />
             </div>
         )
     }
