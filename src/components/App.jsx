@@ -1,10 +1,12 @@
 import Counter from './Counter/Counter'
 
 
-export const App = () => {
+const App = () => {
   return (
     <div>
       <Counter/>
     </div>
   );
 };
+
+export default App
